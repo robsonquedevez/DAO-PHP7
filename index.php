@@ -26,6 +26,7 @@
 
 	//echo $user;
 
+	/*ALTERAR USUARIO
 	$user = new Usuario();
 
 	$user->loadById(5);
@@ -34,4 +35,19 @@
 
 	echo $user;
 
+	*/
+
+	$user = new Usuario();
+
+	$user->loadById(5);
+
+	$user->delete();
+
+	echo $user;
+
+	echo "<br>------------------------------<br>";
+
+	$user->getList();
+
+	echo json_encode($user);
 ?>
